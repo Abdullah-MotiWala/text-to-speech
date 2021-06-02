@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function textSpeak() {
+        var write = document.getElementById("text");
+        var value = write.value;
+        responsiveVoice.speak(value);
+      }
+    </script>
+  </head>
+
+  <body>
+    <textarea name="" id="text" cols="30" rows="10" placeholder="Put your text">
+    </textarea>
+    <button onclick="textSpeak()" type="button" value="Play">
+      Click here to give voice to your writes
+    </button>
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=cpD7y2tx"></script>
+  </body>
+</html>
